@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="Forms (1).ico" type="image/x-icon">
+    <title>Formuláro</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="formulario"><p></p>
+    <div class="cabeçalho">
+        <h1 id="titulo"> Formulário de Contato  </h1>
+        <p id="subtitulo"> Preencha todos os requisitos</p>
+        <br>
+    </div>
+
+    <form>
+
+    <fieldset class="grupo">
+        <div class="campo">
+            <label for="Nome">  </label>
+            <input type="text" name="nome" id="nome" placeholder="Nome" required>
+        </div>
+        <div class="campo">
+            <label for="Sobrenome"> </label>
+            <input type="text" name="sobrenome" id="sobrenome" placeholder="Sobrenome" required>
+        </div>
+    </fieldset>
+
+    <div class="campoE">
+        <label for="E-mail"></label>
+        <input type="email" name="email" id="email" placeholder="E-mail" required>
+    </div>
+
+    <div class="campoT">
+        <br>
+        <p> Mensagem: </p>
+        <textarea name="texto" id="texto" cols="30" rows="20"></textarea>
+    </div>
+
+    <button class="botão" type="submit"> Enviar </button>
+
+    </form>
+    </div>
+</body>
+</html>

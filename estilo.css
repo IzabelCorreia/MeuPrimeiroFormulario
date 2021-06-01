@@ -1,0 +1,161 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: whitesmoke;
+    margin-left: 36%;
+    margin-top: 2%;
+
+}
+/* título e subtitulo */
+.cabeçalho{
+    background-color: #FECB5F;
+    position: relative;
+    right: 40px;
+    width: 510px;
+    
+}
+#titulo{
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    color: #081026;
+    margin-right: 30px;
+}
+#subtitulo{
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    padding-right: 52px;
+    color: #0E3B50;
+    margin-right: 7px;
+}
+/* escopo do formulário */
+.formulario{
+    position: relative;
+    right: 100px;
+    width: 470px;
+    margin-top: 40px;
+    padding-left: 40px;
+    padding-bottom: 10px;
+    padding-top: 15px;
+    background-color: #EEEEEA;
+    box-shadow: 0 0 1em #0810267e;
+}
+fieldset{
+    width: 30%;
+    border: none;
+}
+input, textarea, button{
+    border-radius: 7px;
+}
+/* interior */
+.grupo{
+    margin-top: 2em;
+    margin-bottom: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+#sobrenome{
+    margin-left: 12px;
+    padding-right: 36px;
+}
+#nome{
+    padding-right: 36px;
+}
+
+button{
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+button{
+    position: relative;
+    margin-top: 68px;
+    margin-left: 223px;
+    background: none;
+    color: darkgrey ;
+    width: 200px;
+    height: 40px;
+    border: 2px solid  #FECB5F;
+    border-radius: 20px;
+    transition: .6s;
+    overflow: hidden;
+}
+button:focus{
+    outline: none;
+}
+button::before{
+    content: '';
+    display: block;
+    position: absolute;
+    background-color:  #FECB5F;
+    width: 60px;
+    height: 100%;
+    left: 0;
+    top: 0;
+    opacity: .5s;
+    filter: blur(30px);
+    transform: translateX(-130px) skewX(-15deg);
+}
+button::after{
+    content: '';
+    display: block;
+    position: absolute;
+
+    background-color:  #FECB5F;
+    width: 30px;
+    height: 100%;
+    left: 00px;
+    top: 0;
+    opacity: 0;
+    filter: blur(30px);
+    transform: translateX(-100px) skewX(-15deg);
+}
+button:hover{
+    background: #FECB5F;
+    cursor: pointer;
+    font-style: normal;
+    color: black;
+}
+button:hover::before{
+    transform: translateX(300px) skewX(-15deg);
+    opacity: .6;
+    transition: .7s;
+}
+button:hover::after{
+    transform: translateX(300px) skewX(-15deg);
+    opacity: 1;
+    transition: .7s;
+    
+}
+.campoE input{
+    border-width: 0.20px;
+    padding: 3.2px;
+    padding-right: 256px;
+    height: 22px;
+    border-style: hidden;
+    margin-left: 10px;
+}
+.campo input{
+    border-width: 0.20px;
+    padding: 3.2px;
+    border-style: hidden;
+    height: 22px;
+    margin-left: 10px;
+}
+.campoT{
+    font-family: Helvetica;
+    color: darkgray
+}
+.campoT textarea{
+    width: 380px;
+    height: 160px;
+    padding-right: 46px;
+    margin-left: 10px;
+}
+.campoT p{
+    margin-left: 10px;
+}
+
+
